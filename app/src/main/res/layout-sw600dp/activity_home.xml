@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:layoutDirection="rtl"
+    android:background="@drawable/new_bgggg"
+    tools:context="com.lailathenovell.meerath.home"
+    tools:ignore="Overdraw">
+
+        <LinearLayout
+            android:id="@+id/bigLin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".6">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/txtBigLabelBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:gravity="center"
+                    android:text="@string/gender"
+                    android:layout_weight="1"/>
+
+                <RadioGroup
+                    android:id="@+id/radGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radMale"
+                        style="@style/txtMediumLabelGray"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/btn_right"
+                        android:button="@color/transparent"
+                        android:tag="1"
+                        android:text="@string/male"
+                        android:textColor="@drawable/txt_segmented"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radFemale"
+                        style="@style/txtMediumLabelGray"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/btn_left"
+                        android:button="@color/transparent"
+                        android:tag="2"
+                        android:text="@string/female"
+                        android:textColor="@drawable/txt_segmented"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/txtBigLabelBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:gravity="center"
+                    android:text="@string/helpFatherTitle" />
+
+                <TextView
+                    style="@style/txtMediumLabelGray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/helpFatherMother" />
+
+                <TextView
+                    style="@style/txtMediumLabelGray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/helpFatherMother2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:weightSum="2">
+                        <TextView
+                            style="@style/txtBigLabelBlack"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:gravity="center"
+                            android:text="@string/father"
+                            android:layout_weight="1"/>
+
+                        <RadioGroup
+                            android:id="@+id/radFather"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                style="@style/txtMediumLabelGray"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:background="@drawable/btn_right"
+                                android:button="@color/transparent"
+                                android:tag="1"
+                                android:text="@string/yes"
+                                android:textColor="@drawable/txt_segmented"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/radFatherNo"
+                                style="@style/txtMediumLabelGray"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:background="@drawable/btn_left"
+                                android:button="@color/transparent"
+                                android:tag="2"
+                                android:text="@string/no"
+                                android:textColor="@drawable/txt_segmented"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:weightSum="2">
+
+                        <TextView
+                            style="@style/txtBigLabelBlack"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:gravity="center"
+                            android:text="@string/mother"
+                            android:layout_weight="1"/>
+
+                        <RadioGroup
+                            android:id="@+id/radMother"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                style="@style/txtMediumLabelGray"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:background="@drawable/btn_right"
+                                android:button="@color/transparent"
+                                android:tag="1"
+                                android:text="@string/yes"
+                                android:textColor="@drawable/txt_segmented"/>
+
+                            <RadioButton
+                                android:id="@+id/radMotherNo"
+                                style="@style/txtMediumLabelGray"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:background="@drawable/btn_left"
+                                android:button="@color/transparent"
+                                android:tag="2"
+                                android:text="@string/no"
+                                android:textColor="@drawable/txt_segmented"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="2">
+
+                <TextView
+                    style="@style/txtBigLabelBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/spouse"
+                    android:layout_weight="1"/>
+
+                <RadioGroup
+                    android:id="@+id/radSpouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <RadioButton
+                        style="@style/txtMediumLabelGray"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/btn_right"
+                        android:button="@color/transparent"
+                        android:tag="1"
+                        android:text="@string/yes"
+                        android:textColor="@drawable/txt_segmented" />
+
+                    <RadioButton
+                        android:id="@+id/radNoSpouse"
+                        style="@style/txtMediumLabelGray"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/btn_left"
+                        android:button="@color/transparent"
+                        android:checked="true"
+                        android:tag="2"
+                        android:text="@string/no"
+                        android:textColor="@drawable/txt_segmented" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/txtBigLabelBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:gravity="center"
+                    android:text="@string/helpBroSisTitle" />
+
+                <TextView
+                    style="@style/txtMediumLabelGray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="@string/helpSon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:weightSum="5">
+                        <TextView
+                            style="@style/txtBigLabelBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_30sdp"
+                            android:gravity="center"
+                            android:text="@string/brothers"
+                            android:layout_weight="0.4"/>
+
+                        <ImageView
+                            android:id="@+id/imgAddBro"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_weight="0.4"
+                            android:contentDescription="TODO"
+                            android:src="@drawable/icon_add2"
+                            tools:ignore="ContentDescription,HardcodedText" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:focusable="false"
+                            android:gravity="center"
+                            app:hintEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editBrothers"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:enabled="false"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:textSize="13sp"
+                                android:text="@string/zero"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ImageView
+                            android:id="@+id/imgRemoveBro"
+                            android:layout_width="14dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_weight="0.4"
+                            android:contentDescription="TODO"
+                            android:src="@drawable/icon_remove"
+                            tools:ignore="ContentDescription,HardcodedText" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:weightSum="5"
+                        android:gravity="end">
+                        <TextView
+                            style="@style/txtBigLabelBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_30sdp"
+                            android:gravity="center"
+                            android:text="@string/sisters"
+                            android:layout_weight="0.5"/>
+
+                        <ImageView
+                            android:id="@+id/imgAddSis"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_weight="0.4"
+                            android:contentDescription="TODO"
+                            android:src="@drawable/icon_add2"
+                            tools:ignore="ContentDescription,HardcodedText" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:focusable="false"
+                            android:gravity="center"
+                            app:hintEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editSisters"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:enabled="false"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:textSize="13sp"
+                                android:text="@string/zero"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ImageView
+                            android:id="@+id/imgRemoveSis"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_weight="0.4"
+                            android:contentDescription="TODO"
+                            android:src="@drawable/icon_remove"
+                            tools:ignore="ContentDescription,HardcodedText" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/txtBigLabelBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:gravity="center"
+                    android:text="@string/helpSonDaughterTitle" />
+
+                <TextView
+                    style="@style/txtMediumLabelGray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/helpSon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:weightSum="5">
+                        <TextView
+                            style="@style/txtBigLabelBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_30sdp"
+                            android:gravity="center"
+                            android:text="@string/brothers"
+                            android:layout_weight="0.4"/>
+
+                        <ImageView
+                            android:id="@+id/imgAddSon"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_weight="0.4"
+                            android:contentDescription="TODO"
+                            android:src="@drawable/icon_add2"
+                            tools:ignore="ContentDescription,HardcodedText" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:focusable="false"
+                            android:gravity="center"
+                            app:hintEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editSons"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:enabled="false"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:textSize="13sp"
+                                android:text="@string/zero"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ImageView
+                            android:id="@+id/imgRemoveSon"
+                            android:layout_width="14dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_weight="0.4"
+                            android:contentDescription="TODO"
+                            android:src="@drawable/icon_remove"
+                            tools:ignore="ContentDescription,HardcodedText" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:weightSum="5"
+                        android:gravity="end">
+                        <TextView
+                            style="@style/txtBigLabelBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_30sdp"
+                            android:gravity="center"
+                            android:text="@string/sisters"
+                            android:layout_weight="0.5"/>
+
+                        <ImageView
+                            android:id="@+id/imgAddDaughter"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_weight="0.4"
+                            android:contentDescription="TODO"
+                            android:src="@drawable/icon_add2"
+                            tools:ignore="ContentDescription,HardcodedText" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:focusable="false"
+                            android:gravity="center"
+                            app:hintEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editDaughters"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:enabled="false"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:textSize="13sp"
+                                android:text="@string/zero"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ImageView
+                            android:id="@+id/imgRemoveDaughter"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_weight="0.4"
+                            android:contentDescription="TODO"
+                            android:src="@drawable/icon_remove"
+                            tools:ignore="ContentDescription,HardcodedText" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bigLin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnCal"
+                style="@style/txtBigButtonWhite"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/pink"
+                android:text="@string/calculate"  />
+        </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

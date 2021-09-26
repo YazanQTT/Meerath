@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconLocation">
+        <ignore path="src/main/res/drawable/facebook.png" />
+        <ignore path="src/main/res/drawable/info_aya_nobg.png" />
+        <ignore path="src/main/res/drawable/info_bgg.jpg" />
+        <ignore path="src/main/res/drawable/info_layer.jpg" />
+        <ignore path="src/main/res/drawable/instagram.png" />
+        <ignore path="src/main/res/drawable/result_bg.jpg" />
+        <ignore path="src/main/res/drawable/splash_laila.jpeg" />
+        <ignore path="src/main/res/drawable/youtube.png" />
+    </issue>
+</lint>

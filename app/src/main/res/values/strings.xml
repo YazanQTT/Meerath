@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">حاسبة ليلى لحظوظ الميراث</string>
+    <string name="gender">جنس المتوفّى</string>
+    <string name="male">ذكر</string>
+    <string name="female">أنثى</string>
+    <string name="father">الأب موجود؟</string>
+    <string name="mother">الأم موجودة؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="spouse">الزوج موجود/ة؟</string>
+    <string name="brothers">عدد الذكور</string>
+    <string name="sisters">عدد الإناث</string>
+    <string name="zero">0</string>
+    <string name="calculate">حساب الحظوظ</string>
+    <string name="broShare">حظ الإخوة الذكور</string>
+    <string name="spouseShare">حظ الزوج/ة</string>
+    <string name="sisShare">حظ الإخوة الإناث</string>
+    <string name="fatherShare">حظ الأب</string>
+    <string name="motherShare">حظ الأم</string>
+    <string name="sonShare">حظ الأبناء</string>
+    <string name="daughterShare">حظ البنات</string>
+    <string name="txtRemaining">ويقرر قاضي الميراث بشأن المبلغ المتبقي</string>
+    <string name="txtIsKalala">لا يحق الميراث للإخوة إلا في حالات الكلالة، وهذه الحالة ليست منها.</string>
+    <string name="txtInfo">لمزيد من المعلومات، زوروا صفحاتنا:</string>
+    <string name="facebook">Facebook</string>
+    <string name="youtube">Youtube</string>
+    <string name="lailaYoutubeURL">https://www.youtube.com/channel/UCjGP053waX9zy-OBcGMbRBA</string>
+    <string name="lailaInstagramURL">https://www.instagram.com/laila.thenovel/</string>
+    <string name="lailaFacebookURL">https://web.facebook.com/Lailathenovel/</string>
+    <string name="websiteURL">http://lailathenovel.com/</string>
+    <string name="lailaFacebookID">fb://page/108666523843066</string>
+    <string name="helpSon">إذا كان أي منهم متوفّى، يتم حساب عدد أولاده (ذكورًا وإناثا)</string>
+    <string name="helpFatherMother">يعتبر أي منهما موجودًا عند وجود أي أصل لهما على قيد الحياة</string>
+    <string name="helpFatherMother2">(أب أب، جدّ أب، أم أم، جدةّ أم…)</string>
+    <string name="helpFatherTitle">الأصول (الأبوان)</string>
+    <string name="helpBroSisTitle">الإخوة</string>
+    <string name="helpSonDaughterTitle">الفروع (الأولاد)</string>
+    <string name="x">x</string>
+    <string name="msgError">عذرًا، لم يتم ادخال أيّة بيانات</string>
+    <string name="enter">إدخال حالة</string>
+</resources>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.lailathenovell.meerath.result"
+    android:layoutDirection="rtl"
+    android:background="@drawable/result_bg"
+    android:fillViewport="true">
+
+    <ImageView
+        android:id="@+id/imgInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:contentDescription="TODO"
+        android:src="@drawable/ic_info"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintVertical_bias=".4"
+        >
+
+        <LinearLayout
+            android:id="@+id/linBroShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="6dp">
+            <TextView
+                android:gravity="start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/broShare"
+                style="@style/txtBigLabelBlack"
+                android:layout_weight=".7"/>
+
+            <TextView
+                android:id="@+id/txtBroShare"
+                style="@style/txtViewNumbersStyleBig"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="start"/>
+
+            <TextView
+                android:id="@+id/txtBroCount"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/txtViewNumbersX"
+                android:layout_weight="0.5"
+                android:text="@string/x"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewBro"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:id="@+id/linSisShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:weightSum="2"
+            android:padding="6dp">
+            <TextView
+                android:gravity="start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/sisShare"
+                style="@style/txtBigLabelBlack"
+                android:layout_weight=".7"/>
+            <TextView
+                android:id="@+id/txtSisShare"
+                android:gravity="start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/txtViewNumbersStyleBig"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:id="@+id/txtSisCount"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/txtViewNumbersX"
+                android:layout_weight="0.5"
+                android:text="@string/x"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewSis"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:id="@+id/linSpouseShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:weightSum="2"
+            android:padding="6dp">
+
+            <TextView
+                style="@style/txtBigLabelBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:gravity="start"
+                android:text="@string/spouseShare" />
+
+            <TextView
+                android:id="@+id/txtSpouseShare"
+                android:gravity="start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/txtViewNumbersStyleBig"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewSpouse"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:id="@+id/linFatherShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="6dp">
+            <TextView
+                android:gravity="start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/fatherShare"
+                style="@style/txtBigLabelBlack"
+                android:layout_weight=".7"/>
+            <TextView
+                android:id="@+id/txtFatherShare"
+                android:gravity="start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/txtViewNumbersStyleBig"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewFather"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:id="@+id/linMotherShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="6dp">
+            <TextView
+                android:gravity="start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/motherShare"
+                style="@style/txtBigLabelBlack"
+                android:layout_weight=".7"/>
+            <TextView
+                android:id="@+id/txtMotherShare"
+                android:gravity="start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/txtViewNumbersStyleBig"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewMother"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:id="@+id/linSonShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="6dp">
+            <TextView
+                android:gravity="start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/sonShare"
+                style="@style/txtBigLabelBlack"
+                android:layout_weight=".7"/>
+            <TextView
+                android:id="@+id/txtSonShare"
+                android:gravity="start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/txtViewNumbersStyleBig"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:id="@+id/txtSonCount"
+                style="@style/txtViewNumbersX"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/x"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewSon"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:id="@+id/linDaughterShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:weightSum="2"
+            android:padding="6dp">
+
+            <TextView
+                style="@style/txtBigLabelBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:gravity="start"
+                android:text="@string/daughterShare" />
+
+            <TextView
+                android:id="@+id/txtDaughterShare"
+                android:gravity="start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/txtViewNumbersStyleBig"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:id="@+id/txtDaughterCount"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/txtViewNumbersX"
+                android:layout_weight="0.5"
+                android:text="@string/x"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewDaughter"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:id="@+id/linRemaining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:weightSum="2"
+            android:padding="6dp"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/txtMsgTimes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/txtRemaining"
+                android:textColor="@color/pink"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linKalala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:weightSum="2"
+            android:padding="6dp"
+            android:visibility="gone">
+            <TextView
+                style="@style/txtMsgTimes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/txtIsKalala"
+                android:textColor="@color/pink"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linNoType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:weightSum="2"
+            android:padding="6dp"
+            android:visibility="gone">
+            <TextView
+                style="@style/txtMsgTimes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/msgError"
+                android:textColor="@color/pink"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
