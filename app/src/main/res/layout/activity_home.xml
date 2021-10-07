@@ -343,7 +343,7 @@
 
                         <com.google.android.material.textfield.TextInputLayout
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                            android:layout_width="@dimen/_30sdp"
+                            android:layout_width="@dimen/_40sdp"
                             android:layout_height="@dimen/_35sdp"
                             android:focusable="false"
                             android:gravity="center"
@@ -403,7 +403,7 @@
 
                         <com.google.android.material.textfield.TextInputLayout
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                            android:layout_width="@dimen/_30sdp"
+                            android:layout_width="@dimen/_40sdp"
                             android:layout_height="@dimen/_35sdp"
                             android:focusable="false"
                             android:gravity="center"
@@ -506,7 +506,7 @@
 
                         <com.google.android.material.textfield.TextInputLayout
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                            android:layout_width="@dimen/_30sdp"
+                            android:layout_width="@dimen/_40sdp"
                             android:layout_height="@dimen/_35sdp"
                             android:focusable="false"
                             android:gravity="center"
@@ -566,7 +566,7 @@
 
                         <com.google.android.material.textfield.TextInputLayout
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                            android:layout_width="@dimen/_30sdp"
+                            android:layout_width="@dimen/_40sdp"
                             android:layout_height="@dimen/_35sdp"
                             android:focusable="false"
                             android:gravity="center"
